@@ -41,7 +41,7 @@ namespace HW3
             }
             else
             {
-                Object rItem = top.data;
+                rItem = top.data;
                 top = top.next;
             }
             return rItem;
@@ -56,7 +56,7 @@ namespace HW3
             }
             else
             {
-                rItem = top.data();
+                rItem = top.data;
             }
             return rItem;
         }
