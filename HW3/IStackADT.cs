@@ -28,5 +28,27 @@ namespace HW3
          *          the stack is empty
          */
         Object Pop();
-    }
+
+        /**
+         * Return the top item without removing it. Should result in an error if the stack
+         * is empty. An acceptable alternative is to return something that the user can check
+         * to see if the stack was empty.
+         * @return A reference to the item currently on the top of the stack or null
+         *          if the stack is empty
+         */
+        Object Peek();
+
+        /**
+         * Query the stack to see if it is empty or not. Cannot produce an error.
+         * @return True if the stack is empty, false if not.
+         */
+        Boolean IsEmpty();
+
+        /**
+         * Reset the stack by emptying it. How the stack is cleared is up to
+         * the implementor. The user should pay attention to what this behavior
+         * is
+         */
+        void Clear();
+    }  
 }
