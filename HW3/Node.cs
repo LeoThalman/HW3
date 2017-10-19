@@ -1,21 +1,25 @@
-﻿/* 
+﻿using System;
+/* 
  * A single linked node class.
  */
 
-public class Node
+namespace HW3
 {
-    public Object data; //The data being held
-    public Node next;  // the next node in the list
-
-    public Node()
+    public class Node
     {
-        data = null;
-        next = null;
-    }
+        public Object data; //The data being held
+        public Node next;  // the next node in the list
 
-    public Node(Object data, Node next)
-    {
-        this.data = data;
-        this.next = next;
+        public Node()
+        {
+            data = null;
+            next = null;
+        }
+
+        public Node(Object data, Node next)
+        {
+            this.data = data;
+            this.next = next;
+        }
     }
 }
