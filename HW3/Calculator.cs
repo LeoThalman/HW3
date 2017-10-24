@@ -116,7 +116,7 @@ namespace HW3
                         throw new ArgumentException("Improper input format. Stack became empty when expecting second operand.");
                     b = ((Double)stack.Pop());
                     if (stack.IsEmpty())
-                        throw new ArgumentException("Improper input format. Stack becaome empty when expecting first operand.");
+                        throw new ArgumentException("Improper input format. Stack became empty when expecting first operand.");
                     a = ((Double)stack.Pop());
                     //Wrap up all operations in a single method, easy to add other operators later this way
                     c = DoOperation(a, b, s);
